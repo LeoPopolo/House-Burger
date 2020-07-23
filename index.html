@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/estilos.css">
+
+    <script src="./scripts/jquery-3.5.1.js"></script>
+    <script src="./scripts/index.js"></script>
+    <title>House Burger</title>
+</head>
+<body>
+    <header>
+        <div class="divContacto">
+            <ul>
+                <li>
+                    <a href="https://api.whatsapp.com/send?phone=‎+5491157990405&text=Hola" class="liWpp">
+                        <div><img src="./img/iconoWpp.png" alt=""></div>
+                        Whatsapp: 11-5799-0405
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/houseburger.rb/?hl=es-la" class="liIg">
+                        <div><img src="./img/iconoIg.png" alt=""></div>
+                        Instagram: @houseburger.rb
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="liFb">
+                        <div><img src="./img/iconoFb.png" alt=""></div>
+                        Facebook: House Burger
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="divLogo">
+            <img src="./img/logo.jpeg" alt="">
+        </div>
+        <div class="divHorarios">
+            <h1>Todos los días</h1>
+            <h3>Desde las 18:30hs</h3>
+            <h5>Delivery y Take Away</h5>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li id="sobreNosotros">Sobre Nosotros</li>
+            <li id="menu">Nuestro Menú</li>
+        </ul>
+    </nav>
+    <div id="contenedorPrincipal">
+    </div>
+
+    <div id="pedidos">
+        <h1>Realiza tu pedido:</h1>
+        <h4>Todos los combos vienen con papas</h4>
+
+        <div id="listaCombos">
+            <br>
+            <hr>
+            <br>
+            <h1><span>B</span><span style="color: rgb(255, 246, 117);">U</span><span>R</span><span style="color: rgb(255, 246, 117);">G</span><span>E</span><span style="color: rgb(255, 246, 117);">R</span><span>S</span><span style="color: rgb(255, 246, 117);">:</span></h1>
+            <div class="divBurgers">
+                <h1>CLASSIC BURGER</h1>
+                <h5>CARNE - CHEDDAR - LECHUGA - TOMATE - SALSA BIGMAC</h5>
+                <div class="precios">
+                    <h4>1 Carne - $350</h4>
+                    <h4>2 Carnes - $400</h4>
+                    <h4>3 Carnes - $450</h4>
+                </div>
+            </div>
+            <div class="divBurgers">
+                <h1>DOUBLE HOUSE</h1>
+                <h5>DOBLE CARNE - BACON - DOBLE CHEDDAR</h5>
+                <div class="precios">
+                    <h4>2 Carnes - $360</h4>
+                    <h4>3 Carnes - $420</h4>
+                </div>
+            </div>
+            <div class="divBurgers">
+                <h1>ONION BBQ</h1>
+                <h5>CARNE - CEBOLLA BBQ - BACON - CHEDDAR</h5>
+                <div class="precios">
+                    <h4>1 Carne - $330</h4>
+                    <h4>2 Carnes - $380</h4>
+                    <h4>3 Carnes - $430</h4>
+                </div>
+            </div>
+            <div class="divBurgers">
+                <h1>FUNK BURGER</h1>
+                <h5>SALSA CHAMPIÑONES - CEBOLLA BBQ - CHEDDAR - BACON - DOBLE CARNE</h5>
+                <div class="precios">
+                    <h4>2 Carnes - $420</h4>
+                    <h4>3 Carnes - $460</h4>
+                </div>
+            </div>
+            <div class="divBurgers">
+                <h1>HOUSE VEGGIE</h1>
+                <h5>MEDALLÓN VEGETARIANO - CEBOLLA BBQ - CHEDDAR</h5>
+                <div class="precios">
+                    <h4>2 Carnes - $300</h4>
+                    <h4>3 Carnes - $350</h4>
+                </div>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <h1><span>A</span><span style="color: rgb(255, 246, 117);">D</span><span>I</span><span style="color: rgb(255, 246, 117);">C</span><span>I</span><span style="color: rgb(255, 246, 117);">O</span><span>N</span><span style="color: rgb(255, 246, 117);">A</span><span>L</span><span style="color: rgb(255, 246, 117);">E</span><span>S</span><span style="color: rgb(255, 246, 117);">:</span></h1>
+            <div class="divBurgers">
+                <h4>PAPAS CHEDDAR <h5>$60</h5></h4>
+                <h4>PAPAS CHEDDAR Y BACON<h5>$80</h5></h4>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <h1><span>P</span><span style="color: rgb(255, 246, 117);">O</span><span>R</span><span style="color: rgb(255, 246, 117);">C</span><span>I</span><span style="color: rgb(255, 246, 117);">Ó</span><span>N</span><span style="color: rgb(255, 246, 117);">:</span></h1>
+            <div class="divBurgers">
+                <h4>PAPAS CHEDDAR Y BACON<h5>$200</h5></h4>
+            </div>
+            <br>
+            <hr>
+            <div id="divPedir">
+                <div>
+                    <button onclick="alert('Todavia no esta funcionando!');">Pedilo!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,332 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: rgb(20, 20, 20);
+}
+
+/*Estilos de todo el header*/
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #000;
+    height: auto;
+    width: 100%;
+}
+
+.divLogo{
+    width: 15%;
+}
+
+.divLogo img{
+    width: 100%;
+}
+
+.divContacto{
+    color: #fff;
+    float: left;
+    width: 20%;
+    font-family: 'Dosis', sans-serif;
+}
+
+.divContacto ul{
+    width: 100%;
+    height: auto;
+}
+
+.divContacto ul li{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    float: left;
+    margin-top: 1%;
+}
+
+.divContacto ul li a{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    color: #fff;
+    float: left;
+    padding: 5px;
+}
+
+.divContacto ul li a div{
+    width: 15%;
+    margin-right: 5px;
+    height: auto;
+}
+
+.divContacto ul li a div img{
+    width: 100%;
+    float: left;
+}
+
+.liWpp:hover{
+    color: #00bb2d;
+}
+
+.liFb:hover{
+    color: #3b5998;
+}
+
+.liIg:hover{
+    color: #E1306C;
+}
+
+.divHorarios{
+    color: #fff;
+    float: left;
+    width: 20%;
+    font-family: 'Dosis', sans-serif;
+}
+
+.divHorarios h1{
+    margin-bottom: 1em;
+}
+
+.divHorarios h3{
+    margin-bottom: 2em;
+}
+
+.divHorarios h5{
+    margin-bottom: 1em;
+    color: rgb(255, 255, 78);
+}
+
+/*Fin de estilos del header*/
+
+/*Estilos de la barra de navegación*/
+
+nav{
+    width: 100%;
+    height: 80px;
+    box-shadow: 0 0 10px 5px black;
+    background-color: #000;
+    font-family: 'Dosis', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+}
+
+nav ul li{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    float: left;
+    padding: 1em 3em;
+    cursor: pointer;
+}
+
+nav ul li:hover{
+    color: yellow;
+}
+
+#sobreNosotros{
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/*fin de estilos barra de navegación*/
+
+/*estilos contenedor de datos*/
+
+#divBtnCerrarContenedor{
+    float: left;
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+
+#btnCerrarContenedor{
+    float: right;
+    margin-right: 10%;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+#contenedorPrincipal{
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000099;
+}
+
+#contenido{
+    float: left;
+    color: #fff;
+    width: 50%;
+    margin-left: 25%;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+}
+
+#fotoMenu{
+    float: left;
+    width: 22%;
+    margin-left: 39%;
+}
+
+/*fin estilos contenedor de datos*/
+
+/*estilos menu de pedidos*/
+
+#pedidos{
+    font-family: 'Oswald', sans-serif;
+    float: left;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+    color: #fff;
+}
+#pedidos > h4{
+    color: rgb(255, 246, 117);
+}
+
+#listaCombos{
+    margin-top: 5%;
+}
+
+.divBurgers{
+    margin-top: 5%;
+    border-top: 1px solid rgb(255, 246, 117);
+    padding-top: 1em;
+}
+
+.divBurgers h5{
+    color: rgb(255, 246, 117);
+}
+
+.precios{
+    margin-top: 5%;
+}
+
+.precios h4{
+    color: #fff;
+}
+
+#divPedir{
+    margin-top: 5%;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10%;
+}
+
+#divPedir button{
+    border: none;
+    background-color: rgb(255, 246, 117);
+    padding: 1em;
+    border-radius: 10%;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/*fin de estilos del menu pedido*/
+
+/*responsive*/
+
+@media (max-width: 799px){
+
+    header{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .divLogo{
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 10%;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .divContacto{
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        margin-top: 10%;
+        padding-top: 10%;
+        width: 100%;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .divContacto ul li{
+        width: 80%;
+        margin-left: 20%;        
+    }
+
+    .divHorarios{
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        padding-top: 10%;
+        padding-bottom: 10%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        margin-left: 25%;
+        width: 50%;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    #divBtnCerrarContenedor{
+        margin-top: 10%;
+        margin-bottom: 0;
+    }
+
+    #contenido{
+        margin: 0;
+        padding: 2em;
+        float: left;
+        color: #fff;
+        width: 100%;
+        font-size: 18px;
+        line-height: 22px;
+        font-family: 'Dosis', sans-serif;
+        text-align: center;
+    }
+    
+    #fotoMenu{
+        float: left;
+        width: 100%;
+        margin: 8% 0 0 0;
+    }
+
+    #pedidos{
+        margin-top: 5%;
+    }
+    
+    #listaCombos{
+        margin-top: 10%;
+    }
+    
+    .divBurgers{
+        margin-top: 10%;
+    }
+    
+    .precios{
+        margin-top: 10%;
+    }
+}
